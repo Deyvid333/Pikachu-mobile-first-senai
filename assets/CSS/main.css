@@ -38,7 +38,7 @@ h1::before{
     color:#FFF5;
     position: absolute;
     top: 10%;
-    left: 55%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
     font-size: 27vw;
@@ -46,7 +46,7 @@ h1::before{
 
 .pikachu{
     position: absolute;
-    top: 50%;
+    top: 49%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90vw;
@@ -60,6 +60,11 @@ h1::before{
     gap: 0.5rem;
     
     
+}
+
+.hero-container img{
+    width:24px;
+    border-bottom: 4px solid #fff
 }
 
 .hero-container h2{
@@ -92,9 +97,45 @@ footer{
 @media(min-width: 768px){
 .hero-container p{
     display: block;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-align: center;
     color: var(--color-secondary);
+    }
+
+    .pikachu{
+    top: 48%;
+    width: 65vw;
+  
+    }
+
+    h1::before{
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25vw;
+    }
+
+    .hero-container a{
+    width: 65%;
+    gap: 1rem;
+    } 
+
+    .hero-container{
+    margin-top: -32px;
+    width: 80%;
+    gap: 0.5rem;
+    
+    }
+
+    .hero-container h2{
+    font-size: 8.91vw;
+}
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 13.5rem;
     }
 }
 
