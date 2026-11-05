@@ -127,7 +127,7 @@ footer{
     }
 
     .hero-container h2{
-    font-size: 8.91vw;
+    font-size: 8.8vw;
 }
 
     main{
@@ -154,6 +154,7 @@ footer{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
       
 
     }
@@ -162,12 +163,12 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 500px;
+        width: 780px;
 
     }
 
     .hero-container h2{
-        font-size: 60px;
+        font-size: 84px;
         text-align: left;
         font-weight: 200;
     }
@@ -175,25 +176,59 @@ footer{
     .hero-container p{
         text-align: left;
         font-weight: 100;
-        font-size: 20px;
+        font-size: 26px;
+        width: 650px;
     }
 
-    .hero-container{
-        width: 400px;
-    }
 
     .pikachu{
         width: auto;
-        height: 60vh;
-        top: 60%;
-        left: 49%;
+        height: 72vh;
+        top: 84%;
+        left: 50%;
+        z-index: -1;
     }
 
     footer{
         display: block;
         text-align: center;
         color: var(--color-secondary);
+        margin-top: 36px;
     }
 
+    .hero-container a{
+        width: 500px;
+        height: 100px;
+        text-decoration: none;
+        background-color: var(--color-secondary);
+        color: white;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+  main, footer{
+    padding: 16px;
+  }
+
+  h1{
+    font-size: 22vw;
+    text-align: center;
+    color: white;
+    transform: translateY(75%);
+    z-index: -2;
+}
+
+h1::before{
+    content:'Pikachu';
+    color:#FFF5;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    font-size: 27vw;
+}
     
 }
